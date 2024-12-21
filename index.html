@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script src="https://kit.fontawesome.com/d318cabef4.js" crossorigin="anonymous"></script>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo2.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">skills</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hello, I am <span>prakhar sharma</span><br> from India</h1>
+        </div>
+    </div>
+</div>
+<!-------------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/page2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>
+                    I'm Prakhar Sharma.I born in meerut cantt
+                    and I completed my higer education from meerut.
+                    I have cleared jee mains exam 2023 with 95 percentile
+                    and i have great command on mathematics and physics subject.
+                    I'm good in web designing. My hobby is to play cricket with
+                    my friends and I also love to watch cricket matches.
+                    I was 18 year old when I started coding.I know many computer
+                    languages such as C,python,HTML,CSS,java script.
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('skills')">skills</p>
+                        <p class="tab-links"onclick="opentab('education')">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>Web Development</span><br>Designing web/app interfaces</li> 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>10th from St.john's Sr.Sec.School.</li>
+                            <li><span>2022</span><br>12th from St.john's Sr.Sec.School.</li> 
+                            <li><span>2023</span><br>drop year from physics wallah.</li> 
+                            <li><span>2027</span><br>BTech CSE from M.I.E.T, Meerut.</li> 
+                        </ul>
+                    </div>
+                </p>   
+            </div>
+        </div>
+    </div>
+</div>
+<!--------services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web design</h2>
+                <p>I have created many web pages which are orignal as well
+                    as well as duplicate.Some of them are duplicate front 
+                    web page of google,my portfolio, email entry. 
+                </p>
+                <a href="Learn more"></a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>UI/UX Design</h2>
+                <p> i have created app interfaces such as display of a 
+                    Tic-Tac-Toe,calculator,currency convertor </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!----------portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>Tic-Tac-Toe</h3>
+                    ,<p>2 player game app for mind's sharpness</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>calculation</h3>
+                    <p>Use for basic calculations</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3>Currency Convertor</h3>
+                    <p>This is use to convert currency</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+<!--------------------contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-share-from-square"></i>prakharsharma2504@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>6398767092</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheetff">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="Copyright">
+        <p>Copyright by prakhar. Made by <i class="fa-solid fa-heart"></i> prakhar sharma</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwlKEiZ4CV7htaLClZrIvjRS5GiE88ao9kc1HEoy1bhgB4AiB05Q097RW3i8rf_FChV/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
